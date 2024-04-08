@@ -1,0 +1,58 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-y: auto;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 9rem;
+    height: 19rem;
+    padding: 1rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 15px;
+    margin: 1rem;
+}
+.productImgContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.productImage{
+    width: 70%;
+}
+.card:nth-child(4) .productImage{
+    width: 90%;
+}
+.card:nth-child(5) .productImage{
+    width: 85%;
+}
+.productName{
+    
+    font-size: 1rem;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.deleteButtonContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.deleteBtnStyle{
+    width: 50%;
+    height: 2.5rem;
+    background-color: #0B4D01;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.deleteBtnStyle:hover{
+    transform: scale(1.1);
+}

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Product</title>
     <link rel="stylesheet" href="./adminPanelBasicStructionStyle.css">
-    <link rel="stylesheet" href="./addProductStyle.css">
+    <link rel="stylesheet" href="./deleteProductStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -41,7 +41,7 @@
                 <div id="emptySpace"></div>
                 <div class="menu">
                     <div class="menuIcon"><img class="menuIcon" src="./adminAccountIcon.svg" alt=""></div>
-                    <div class="menuoption hideMenu"><b>Log out</b></div>
+                    <div class="menuoption hideMenu"><b>Account</b></div>
                 </div>
             </div>
         </header>
@@ -54,22 +54,41 @@
             </nav>
         </section>
         <main>
-            <form id="addProductForm" action="#" method="post" enctype="multipart/form-data">
-                <input type="file" id="fileInput" style="display:none" />
-                <label class="formElementCenter" for="fileInput">
-                  <img src="./imageUpload.svg" alt="Upload Image" style="cursor:pointer" />
-                </label>
-                <input type="text" name="productName" id="productNameInput" placeholder="Product Name *">
-                <input type="text" name="productPrice" id="productPriceInput" placeholder="Product Price *">
-                <input type="text" name="productQuantity" id="productQuantityInput" placeholder="Product Name *">
-                <input type="text" name="chooseWarranty" id="chooseWarrantyInput" placeholder="Product Quantity *">
-                <span class="productDescriptionContainer">
-                  <input type="text" name="productDescription[]" class="productDescriptionInput" placeholder="Product Description *">
-                  <input type="button" onclick="addInputField(this)" value="+" id="addDescriptionBtn" class="addDescriptionBtn">
-                </span>
-                <span class="formElementCenter"><button type="submit" id="addProductBtn">Add Product</button></span>
-              </form>
-              
+            <div class="card">
+                <div class="productImgContainer"><img class="productImage" src="./Apple iPhone 14.webp" alt=""></div>
+                <p class="productName">Apple iPhone 13 (Blue, 128gb)</p>
+                <div class="rating"><img src="./rateStar.svg" alt="rating"><span>(123)</span></div>
+                <p>₹45,000 only</p>
+                <div class="deleteButtonContainer"><button class="deleteBtnStyle">Delete</button></div>
+            </div>
+            <div class="card">
+                <div class="productImgContainer"><img class="productImage" src="./OnePlus Nord CE 3 Lite 5G (Pastel Lime, 128 GB)  (8 GB RAM).webp" alt=""></div>
+                <p class="productName">OnePlus Nord CE 3 Lite 5G </p>
+                <div class="rating"><img src="./rateStar.svg" alt="rating"><span>(123)</span></div>
+                <p>₹45,000 only</p>
+                <div class="deleteButtonContainer"><button class="deleteBtnStyle">Delete</button></div>
+            </div>
+            <div class="card">
+                <div class="productImgContainer"><img class="productImage" src="./POCO M6 Pro 5G.webp" alt=""></div>
+                <p class="productName">POCO M6 Pro 5G (Blue, 128gb)</p>
+                <div class="rating"><img src="./rateStar.svg" alt="rating"><span>(123)</span></div>
+                <p>₹45,000 only</p>
+                <div class="deleteButtonContainer"><button class="deleteBtnStyle">Delete</button></div>
+            </div>
+            <div class="card">
+                <div class="productImgContainer"><img class="productImage" src="./SAMSUNG Galaxy S23 Ultra 5G.webp" alt=""></div>
+                <p class="productName">SAMSUNG Galaxy S23 Ultra 5G</p>
+                <div class="rating"><img src="./rateStar.svg" alt="rating"><span>(123)</span></div>
+                <p>₹45,000 only</p>
+                <div class="deleteButtonContainer"><button class="deleteBtnStyle">Delete</button></div>
+            </div>
+            <div class="card">
+                <div class="productImgContainer"><img class="productImage" src="./vivo t3 5g.webp" alt=""></div>
+                <p class="productName">Vivo t3 5g</p>
+                <div class="rating"><img src="./rateStar.svg" alt="rating"><span>(123)</span></div>
+                <p>₹45,000 only</p>
+                <div class="deleteButtonContainer"><button class="deleteBtnStyle">Delete</button></div>
+            </div>
         </main>
     </section>
     <script>
@@ -114,35 +133,5 @@ window.addEventListener('resize', checkDeviceAndHideNavigation);
 window.addEventListener('load', checkDeviceAndHideNavigation);
 
     </script>
-
-<script>
-  function addInputField(button) {
-    // Create a container span for the new input and button
-    var newContainer = document.createElement('span');
-    newContainer.className = 'productDescriptionContainer';
-  
-    // Create a new input element for product description
-    var newInput = document.createElement('input');
-    newInput.type = 'text';
-    newInput.name = 'productDescription[]';
-    newInput.placeholder = 'Product Description *';
-    newInput.className = 'productDescriptionInput';
-  
-    // Create a new add button
-    var newAddButton = document.createElement('input');
-    newAddButton.type = 'button';
-    newAddButton.value = '+';
-    newAddButton.className = 'addDescriptionBtn';
-    newAddButton.id = 'addDescriptionBtn';
-    newAddButton.onclick = function() { addInputField(newAddButton); };
-  
-    // Append the new input and button to the container span
-    newContainer.appendChild(newInput);
-    newContainer.appendChild(newAddButton);
-  
-    // Insert the new container after the parent span of the button that was clicked
-    button.parentNode.parentNode.insertBefore(newContainer, button.parentNode.nextSibling);
-  }
-  </script>
 </body>
 </html>

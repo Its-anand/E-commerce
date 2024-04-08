@@ -1,0 +1,64 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+#addProductForm{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 90%;
+
+    justify-content: space-evenly;
+}
+#addProductForm input{
+    border: 3px solid #3B3B3B;
+   
+    height: 2.2rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+}
+.formElementCenter{
+    display: flex;
+    justify-content: center;
+
+}
+.productDescriptionContainer{
+   display: flex;
+   align-items: center;
+    box-sizing: border-box;
+}
+.productDescriptionInput{
+    width: 100%;
+}
+#addDescriptionBtn{
+    width: 1rem;
+}
+.productDescriptionContainer #addDescriptionBtn{
+    width: 2rem;
+    margin-left: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: #fff;
+    color: #3B3B3B;
+}
+#addProductForm #addProductBtn{
+    background-color: #0B4D01;
+    color: #fff;
+    border: none;
+    width: 8rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    height: 2.5rem;
+    border-radius: 10px;
+}
+.productDescriptionContainer #addDescriptionBtn{
+    padding: unset;
+    cursor: pointer;
+
+}
+#addProductForm label{
+    margin-bottom: 1rem;
+}

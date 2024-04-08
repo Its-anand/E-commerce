@@ -1,0 +1,126 @@
+body {
+    margin: 0px;
+    padding: 0%;
+    height: 100vh;
+    background-color: #edf3ff;
+    display: grid; 
+    grid-template-columns: 16.5rem 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    font-family: "Roboto";
+    grid-template-areas: 
+    "headerContainer mainContainer mainContainer"
+    "headerContainer mainContainer mainContainer"
+    "headerContainer mainContainer mainContainer"; 
+}
+.headerContainer { 
+  grid-area: headerContainer; 
+  padding: 2.5rem 1rem 2rem 2.25rem;
+}
+.mainContainer { grid-area: mainContainer; ;}
+header{
+  background-color: #E2F6DF;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  padding: 2rem 1rem 1rem 1rem;
+  box-sizing: border-box;
+}
+#logo{
+  position: relative;
+  height: 3rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  z-index: 1;
+  margin-bottom: 2rem;
+}
+.logoCircle{
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  background-color: #0AC40C;
+}
+.logoName{
+    display: flex;
+    flex-direction: row;
+    margin-left: 4px;
+}
+.logoFirstName{
+    margin-right: 0.3rem;
+}
+.menuContainer{
+    box-sizing: border-box;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3rem 3rem 3rem 3rem 1fr 3rem;
+    height: 82%;
+
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 10px;
+}
+.menu:hover{
+    background-color: #F2F6FE;
+}
+.menuoption{
+    margin-left: 7px;
+}
+.menuIcon{
+    width: 20px;
+    height: auto;
+    display: inline;
+    display: block;
+}
+.mainContainer{
+    box-sizing: border-box;
+    padding: 3rem 2.5rem 3rem 1rem;
+}
+.greetingArea{
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.greetings{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.navBtnIcon{
+    width: 30px;
+}
+nav{
+    cursor: pointer;
+}
+main{
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    width: 100%;
+    height: calc(100% - 2.5rem);
+    border-radius: 15px;
+    background: #fff;
+}
+@media screen and (max-width:540px){
+    body{
+        grid-template-columns: 5.8rem 1fr 1fr;
+    }
+    .headerContainer {
+        padding: 1rem;
+    }
+    .mainContainer {
+        padding: 3rem 1rem 2rem 0rem;
+    }
+
+}
+@media screen and (max-width:400px){
+    .greetings {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+}

@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delete Product</title>
+    <title>Add Product</title>
     <link rel="stylesheet" href="./adminPanelBasicStructionStyle.css">
-    <link rel="stylesheet" href="./deleteProductStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="OrderRequestStyle.css">
 
 </head>
 <body>
@@ -41,7 +41,7 @@
                 <div id="emptySpace"></div>
                 <div class="menu">
                     <div class="menuIcon"><img class="menuIcon" src="./adminAccountIcon.svg" alt=""></div>
-                    <div class="menuoption hideMenu"><b>Log Out</b></div>
+                    <div class="menuoption hideMenu"><b>Account</b></div>
                 </div>
             </div>
         </header>
@@ -54,41 +54,42 @@
             </nav>
         </section>
         <main>
-            <div class="card">
-                <div class="productImgContainer"><img class="productImage" src="./Apple iPhone 14.webp" alt=""></div>
-                <p class="productName">Apple iPhone 13 (Blue, 128gb)</p>
-                <div class="rating"><img src="./rateStar.svg" alt="rating"><span>(123)</span></div>
-                <p>₹45,000 only</p>
-                <div class="deleteButtonContainer"><button class="deleteBtnStyle">Delete</button></div>
-            </div>
-            <div class="card">
-                <div class="productImgContainer"><img class="productImage" src="./OnePlus Nord CE 3 Lite 5G (Pastel Lime, 128 GB)  (8 GB RAM).webp" alt=""></div>
-                <p class="productName">OnePlus Nord CE 3 Lite 5G </p>
-                <div class="rating"><img src="./rateStar.svg" alt="rating"><span>(123)</span></div>
-                <p>₹45,000 only</p>
-                <div class="deleteButtonContainer"><button class="deleteBtnStyle">Delete</button></div>
-            </div>
-            <div class="card">
-                <div class="productImgContainer"><img class="productImage" src="./POCO M6 Pro 5G.webp" alt=""></div>
-                <p class="productName">POCO M6 Pro 5G (Blue, 128gb)</p>
-                <div class="rating"><img src="./rateStar.svg" alt="rating"><span>(123)</span></div>
-                <p>₹45,000 only</p>
-                <div class="deleteButtonContainer"><button class="deleteBtnStyle">Delete</button></div>
-            </div>
-            <div class="card">
-                <div class="productImgContainer"><img class="productImage" src="./SAMSUNG Galaxy S23 Ultra 5G.webp" alt=""></div>
-                <p class="productName">SAMSUNG Galaxy S23 Ultra 5G</p>
-                <div class="rating"><img src="./rateStar.svg" alt="rating"><span>(123)</span></div>
-                <p>₹45,000 only</p>
-                <div class="deleteButtonContainer"><button class="deleteBtnStyle">Delete</button></div>
-            </div>
-            <div class="card">
-                <div class="productImgContainer"><img class="productImage" src="./vivo t3 5g.webp" alt=""></div>
-                <p class="productName">Vivo t3 5g</p>
-                <div class="rating"><img src="./rateStar.svg" alt="rating"><span>(123)</span></div>
-                <p>₹45,000 only</p>
-                <div class="deleteButtonContainer"><button class="deleteBtnStyle">Delete</button></div>
-            </div>
+            <h2>Order Request</h2>
+            <div class= "color-box">
+      
+                <img src="Apple iPhone 14.webp" height="75%">
+               <P> Apple IPhone 14 (Grey,128GB)</P>
+                <h5 > Rs:55000/- </h5>
+                <button>Confirm</button>
+                    
+              </div>
+          
+              <div class= "color">     
+                <img src="OnePlus Nord CE 3 Lite 5G (Pastel Lime, 128 GB)  (8 GB RAM).webp" height="75%">
+               <P style="margin-top: 2%;"> OnePlus Nord CE 3 Lite 5G <br>
+                 (Pastel Lime, 128 GB)  (8 GB RAM)</P>
+                <h5 style="margin-left: 12%;"> Rs:800/- </h5>
+                <button>Confirm</button>
+                   
+              </div>
+          
+              <div class= "color">     
+               <img src="Blaupunkt BH41 Bluetooth Headset  (Black, On the Ear).webp" height="75%" >
+               <P>Blaupunkt BH41 Bluetooth Headset<br>(Black, On the Ear) </P>
+                <h5 style="margin-left: 10%;"> Rs:1200/- </h5>
+                <button>Confirm</button>
+                      
+              </div>
+          
+              <div class= "color">     
+                <img src="SONY WH-XB910N with 30Hrs Battery Life, Active Noise Cancellation enabled Bluetooth Headset  (Blue, On the Ear).webp" height="75%" width="8%">
+                <P> SONY WH-XB910N with 30Hrs <br> Battery Life</P>
+                 <h5 style="margin-left: 14%;"> Rs:1500/- </h5>
+                 <button>Confirm</button>
+                       
+               </div>  
+
+
         </main>
     </section>
     <script>

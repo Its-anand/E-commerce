@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Cart</title>
+  </head>
+  <body>
+    <input type="checkbox" id="chkBox" />
+    <header>
+      <div class="logo">
+        <div
+          style="
+            padding: 5px;
+            margin: 10px;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: rgb(3, 205, 3);
+          "
+        ></div>
+        <div
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <h2 class="logo-text" style="margin-left: -44px !important">
+            Apni Dukan
+          </h2>
+          <label for="chkBox" class="hamburger-label">
+            <div></div>
+            <div></div>
+            <div></div>
+          </label>
+        </div>
+      </div>
+
+      <div class="menu">
+        <ul class="nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Orders</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li>
+            <a href="/Cart.html">
+              Cart&nbsp;&nbsp;<i class="fa fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
+          <!-- <li>
+            <a href="#"><i class="fa fa-solid fa-user"></i></a>
+          </li> -->
+        </ul>
+      </div>
+    </header>
+    <section id="heading">
+      <h2>Cart</h2>
+      <h2>3 items</h2>
+    </section>
+    <section id="cart" class="section-p1">
+      <table width="100%">
+        <thead>
+          <tr>
+            <td>#</td>
+            <td><b>PRODUCT</b></td>
+            <td>NAME</td>
+            <td>PRICE</td>
+            <td>QUANTITY</td>
+            <td>SUBTOTAL</td>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+              <img src="./images/Apple iPhone 14.webp" />
+            </td>
+
+            <td>Apple iPhone 15 Pro</td>
+            <td>Rs. 55,000</td>
+            <td><input type="number" value="1" /></td>
+            <td>Rs. 55,000</td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>
+              <img src="./images/POCO M6 Pro 5G.webp" />
+            </td>
+
+            <td>POCO M6 Pro 5G</td>
+            <td>Rs. 16,000</td>
+            <td><input type="number" value="1" /></td>
+            <td>Rs. 16,000</td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>
+              <img
+                src="./images/OnePlus Nord CE 3 Lite 5G (Pastel Lime, 128 GB)  (8 GB RAM).webp"
+              />
+            </td>
+
+            <td>OnePlus Nord CE 3 Lite 5G</td>
+            <td>Rs. 90,000</td>
+            <td><input type="number" value="1" /></td>
+            <td>Rs. 90,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="cart-total">
+      <div style="display: flex; justify-content: space-between">
+        <span><strong>Subtotal</strong></span>
+        <span>Rs. 50,000</span>
+      </div>
+      <div style="display: flex; justify-content: space-between">
+        <span><strong>Shipping</strong></span>
+        <span>Free</span>
+      </div>
+      <div style="display: flex; justify-content: space-between">
+        <span><strong>Tax</strong></span>
+        <span>Rs. 5000</span>
+      </div>
+      <hr style="width: 100%" />
+      <div style="display: flex; justify-content: space-between">
+        <span><strong>Total</strong></span>
+        <span><strong>Rs. 55,000</strong></span>
+      </div>
+      <button
+        style="
+          color: white;
+          font-weight: bold;
+          padding: 9px 16px;
+          border-radius: 6px;
+          background-color: rgb(1, 209, 1);
+          border: none;
+        "
+      >
+        Proceed to Checkout
+      </button>
+      <button
+        type="button"
+        style="
+          color: rgb(10, 10, 10);
+          font-weight: bold;
+          padding: 9px 16px;
+          border-radius: 6px;
+          background-color: rgb(253, 255, 253);
+          border: 1px solid rgb(150, 150, 150);
+        "
+      >
+        Continue Shopping
+      </button>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

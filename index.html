@@ -18,9 +18,10 @@
       rel="stylesheet"
     />
 
-    <title>Document</title>
+    <title>Apni Dukan</title>
   </head>
   <body>
+    <input type="checkbox" id="chkBox" />
     <header>
       <div class="logo">
         <div
@@ -33,21 +34,33 @@
             background-color: rgb(3, 205, 3);
           "
         ></div>
-        <h2 class="logo-text" style="margin-left: -44px !important">
-          Apni Dukan
-        </h2>
+        <div
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <h2 class="logo-text" style="margin-left: -44px !important">
+            Apni Dukan
+          </h2>
+          <label for="chkBox" class="hamburger-label">
+            <div></div>
+            <div></div>
+            <div></div>
+          </label>
+        </div>
       </div>
+
       <div class="menu">
         <ul class="nav">
           <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
+          <li><a href="#">Orders</a></li>
           <li><a href="#">Contact Us</a></li>
           <li>
-            <a href="#"><i class="fa fa-solid fa-cart-shopping"></i></a>
+            <a href="/Cart.html">
+              Cart&nbsp;&nbsp;<i class="fa fa-solid fa-cart-shopping"></i
+            ></a>
           </li>
-          <li>
+          <!-- <li>
             <a href="#"><i class="fa fa-solid fa-user"></i></a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </header>
@@ -59,16 +72,139 @@
         </button>
       </div>
     </section>
-    <section class="landing-image">
-      <img src="./Rectangle 2.png" style="object-fit: contain" />
+    <section class="landing-image" style="padding: 0px 20px">
+      <img src="./images/Rectangle 2.png" style="width: 100vw; height: auto" />
     </section>
     <section id="new-arrival">
-      <h2 style="margin: 42px">New Arrivals</h2>
       <div id="container">
+        <div style="padding-left: 30px">
+          <h2>New Arrivals</h2>
+        </div>
+
         <div id="new-arrival-list">
           <div class="card">
             <div class="card-image">
-              <img src="./Apple iPhone 14.webp" width="120px" height="159px" />
+              <img
+                src="./images/Apple iPhone 14.webp"
+                width="120px"
+                height="159px"
+              />
+            </div>
+            <div class="card-content">
+              <div class="product-brand">
+                <span>Apple</span>
+                <div class="wishlist">
+                  <i class="fa fa-solid fa-heart"></i>
+                </div>
+              </div>
+
+              <span class="product-title">Apple iPhone 12 Pro</span>
+              <span class="price">Rs. 45000</span>
+              <div class="footer-btn">
+                <!-- <button class="no-border">
+                <i class="fa fa-solid fa-shopping-cart"></i>
+              </button> -->
+                <span style="font-weight: bold; font-size: 14px">4 ⭐</span>
+                <button class="no-border-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="./images/SONY WH-XB910N with 30Hrs Battery Life, Active Noise Cancellation enabled Bluetooth Headset  (Blue, On the Ear).webp"
+                width="120px"
+                height="159px"
+              />
+            </div>
+            <div class="card-content">
+              <div class="product-brand">
+                <span>SONY</span>
+                <div class="wishlist">
+                  <i class="fa fa-solid fa-heart heart-icon"></i>
+                </div>
+              </div>
+
+              <span class="product-title">SONY WH-XB910N</span>
+              <span class="price">Rs. 45000</span>
+              <div class="footer-btn">
+                <!-- <button class="no-border">
+                <i class="fa fa-solid fa-shopping-cart"></i>
+              </button> -->
+                <span style="font-weight: bold; font-size: 14px">4.5 ⭐</span>
+                <button class="no-border-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="./images/OnePlus Nord CE 3 Lite 5G (Pastel Lime, 128 GB)  (8 GB RAM).webp"
+                width="120px"
+                height="159px"
+              />
+            </div>
+            <div class="card-content">
+              <div class="product-brand">
+                <span>OnePlus</span>
+                <div class="wishlist" onclick="handleAddWishlist()">
+                  <i class="fa fa-solid fa-heart"></i>
+                </div>
+              </div>
+
+              <span class="product-title">OnePlus Nord CE 3 Lite 5G</span>
+              <span class="price">Rs. 35000</span>
+              <div class="footer-btn">
+                <!-- <button class="no-border">
+                <i class="fa fa-solid fa-shopping-cart"></i>
+              </button> -->
+                <span style="font-weight: bold; font-size: 14px">4 ⭐</span>
+                <button class="no-border-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="./images/lenovo-ideapad-slim-3-intel-core-i5-12th-gen-1235u-8-gb-512-gb-ssd-windows-11-home-15iau7-thin-light-laptop.webp"
+                width="120px"
+                height="159px"
+                style="object-fit: contain"
+              />
+            </div>
+            <div class="card-content">
+              <div class="product-brand">
+                <span>Lenovo</span>
+                <div class="wishlist"><i class="fa fa-solid fa-heart"></i></div>
+              </div>
+
+              <span class="product-title">Lenovo Ideapad Slim 3</span>
+              <span class="price">Rs. 35000</span>
+              <div class="footer-btn">
+                <!-- <button class="no-border">
+                <i class="fa fa-solid fa-shopping-cart"></i>
+              </button> -->
+                <span style="font-weight: bold; font-size: 14px">5 ⭐</span>
+                <button class="no-border-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="padding-left: 30px">
+          <h2>Latest Smartphones</h2>
+        </div>
+        <div id="mobile-list">
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="./images/Apple iPhone 14.webp"
+                width="120px"
+                height="159px"
+              />
             </div>
             <div class="card-content">
               <div class="product-brand">
@@ -82,14 +218,7 @@
                 <!-- <button class="no-border">
                 <i class="fa fa-solid fa-shopping-cart"></i>
               </button> -->
-                <span
-                  style="
-                    font-weight: bold;
-                    font-size: 14px;
-                    color: rgb(255, 77, 0);
-                  "
-                  >12% Off</span
-                >
+                <span style="font-weight: bold; font-size: 14px">4 ⭐</span>
                 <button class="no-border-btn">Add to Cart</button>
               </div>
             </div>
@@ -97,7 +226,11 @@
 
           <div class="card">
             <div class="card-image">
-              <img src="./vivo t3 5g.webp" width="120px" height="159px" />
+              <img
+                src="./images/vivo t3 5g.webp"
+                width="120px"
+                height="159px"
+              />
             </div>
             <div class="card-content">
               <div class="product-brand">
@@ -111,14 +244,7 @@
                 <!-- <button class="no-border">
                 <i class="fa fa-solid fa-shopping-cart"></i>
               </button> -->
-                <span
-                  style="
-                    font-weight: bold;
-                    font-size: 14px;
-                    color: rgb(255, 77, 0);
-                  "
-                  >10% Off</span
-                >
+                <span style="font-weight: bold; font-size: 14px">4.5 ⭐</span>
                 <button class="no-border-btn">Add to Cart</button>
               </div>
             </div>
@@ -127,7 +253,7 @@
           <div class="card">
             <div class="card-image">
               <img
-                src="./OnePlus Nord CE 3 Lite 5G (Pastel Lime, 128 GB)  (8 GB RAM).webp"
+                src="./images/OnePlus Nord CE 3 Lite 5G (Pastel Lime, 128 GB)  (8 GB RAM).webp"
                 width="120px"
                 height="159px"
               />
@@ -144,14 +270,7 @@
                 <!-- <button class="no-border">
                 <i class="fa fa-solid fa-shopping-cart"></i>
               </button> -->
-                <span
-                  style="
-                    font-weight: bold;
-                    font-size: 14px;
-                    color: rgb(255, 77, 0);
-                  "
-                  >15% Off</span
-                >
+                <span style="font-weight: bold; font-size: 14px">4 ⭐</span>
                 <button class="no-border-btn">Add to Cart</button>
               </div>
             </div>
@@ -159,7 +278,11 @@
 
           <div class="card">
             <div class="card-image">
-              <img src="./POCO M6 Pro 5G.webp" width="120px" height="159px" />
+              <img
+                src="./images/POCO M6 Pro 5G.webp"
+                width="120px"
+                height="159px"
+              />
             </div>
             <div class="card-content">
               <div class="product-brand">
@@ -173,14 +296,229 @@
                 <!-- <button class="no-border">
                 <i class="fa fa-solid fa-shopping-cart"></i>
               </button> -->
-                <span
-                  style="
-                    font-weight: bold;
-                    font-size: 14px;
-                    color: rgb(255, 77, 0);
-                  "
-                  >10% Off</span
-                >
+                <span style="font-weight: bold; font-size: 14px">5 ⭐</span>
+                <button class="no-border-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="padding-left: 30px">
+          <h2>Trending Headphones</h2>
+        </div>
+        <div id="headphone-list">
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="./images/SONY WH-XB910N with 30Hrs Battery Life, Active Noise Cancellation enabled Bluetooth Headset  (Blue, On the Ear).webp"
+                width="120px"
+                height="159px"
+              />
+            </div>
+            <div class="card-content">
+              <div class="product-brand">
+                <span>SONY</span>
+                <div class="wishlist"><i class="fa fa-solid fa-heart"></i></div>
+              </div>
+
+              <span class="product-title">SONY WH-XB910N</span>
+              <span class="price">Rs. 45000</span>
+              <div class="footer-btn">
+                <!-- <button class="no-border">
+                <i class="fa fa-solid fa-shopping-cart"></i>
+              </button> -->
+                <span style="font-weight: bold; font-size: 14px">4 ⭐</span>
+                <button class="no-border-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="./images/Blaupunkt BH41 Bluetooth Headset  (Black, On the Ear).webp"
+                width="120px"
+                height="159px"
+              />
+            </div>
+            <div class="card-content">
+              <div class="product-brand">
+                <span>Blapunkt</span>
+                <div class="wishlist"><i class="fa fa-solid fa-heart"></i></div>
+              </div>
+
+              <span class="product-title">Blaupunkt BH41</span>
+              <span class="price">Rs. 45000</span>
+              <div class="footer-btn">
+                <!-- <button class="no-border">
+                <i class="fa fa-solid fa-shopping-cart"></i>
+              </button> -->
+                <span style="font-weight: bold; font-size: 14px">4.5 ⭐</span>
+                <button class="no-border-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="./images/51fEeuXfGTL._SX679_.jpg"
+                width="120px"
+                height="159px"
+              />
+            </div>
+            <div class="card-content">
+              <div class="product-brand">
+                <span>SoundCore</span>
+                <div class="wishlist"><i class="fa fa-solid fa-heart"></i></div>
+              </div>
+
+              <span class="product-title">Soundcore H30i Wireless</span>
+              <span class="price">Rs. 35000</span>
+              <div class="footer-btn">
+                <!-- <button class="no-border">
+                <i class="fa fa-solid fa-shopping-cart"></i>
+              </button> -->
+                <span style="font-weight: bold; font-size: 14px">4 ⭐</span>
+                <button class="no-border-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="./images/MadRabbit Touch ANC Bluetooth Headset  (Black, On the Ear).webp"
+                width="120px"
+                height="159px"
+              />
+            </div>
+            <div class="card-content">
+              <div class="product-brand">
+                <span>MadRabbit</span>
+                <div class="wishlist"><i class="fa fa-solid fa-heart"></i></div>
+              </div>
+
+              <span class="product-title">MadRabbit Touch</span>
+              <span class="price">Rs. 30000</span>
+              <div class="footer-btn">
+                <!-- <button class="no-border">
+                <i class="fa fa-solid fa-shopping-cart"></i>
+              </button> -->
+                <span style="font-weight: bold; font-size: 14px">5 ⭐</span>
+                <button class="no-border-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="padding-left: 30px">
+          <h2>New Gen Laptops</h2>
+        </div>
+        <div id="laptop-list">
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="./images/dell-intel-core-i3-12th-gen-1215u-8-gb-512-gb-ssd-windows-11-home-new-inspiron-15-laptop-thin-light.webp"
+                width="120px"
+                height="159px"
+                style="object-fit: contain"
+              />
+            </div>
+            <div class="card-content">
+              <div class="product-brand">
+                <span>DELL</span>
+                <div class="wishlist"><i class="fa fa-solid fa-heart"></i></div>
+              </div>
+
+              <span class="product-title">DELL Intel Core i3 12th Gen</span>
+              <span class="price">Rs. 45000</span>
+              <div class="footer-btn">
+                <!-- <button class="no-border">
+                <i class="fa fa-solid fa-shopping-cart"></i>
+              </button> -->
+                <span style="font-weight: bold; font-size: 14px">4 ⭐</span>
+                <button class="no-border-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="./images/lenovo-ideapad-slim-3-intel-core-i5-12th-gen-1235u-8-gb-512-gb-ssd-windows-11-home-15iau7-thin-light-laptop.webp"
+                width="120px"
+                height="159px"
+                style="object-fit: contain"
+              />
+            </div>
+            <div class="card-content">
+              <div class="product-brand">
+                <span>Lenovo</span>
+                <div class="wishlist"><i class="fa fa-solid fa-heart"></i></div>
+              </div>
+
+              <span class="product-title">Lenovo Ideapad Slim 3</span>
+              <span class="price">Rs. 45000</span>
+              <div class="footer-btn">
+                <!-- <button class="no-border">
+                <i class="fa fa-solid fa-shopping-cart"></i>
+              </button> -->
+                <span style="font-weight: bold; font-size: 14px">4.5 ⭐</span>
+                <button class="no-border-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="./images/hp-victus-intel-core-i5-12th-gen-12450h-16-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-3050-15-fa0666tx-gaming-laptop.webp"
+                width="120px"
+                height="159px"
+                style="object-fit: contain"
+              />
+            </div>
+            <div class="card-content">
+              <div class="product-brand">
+                <span>HP</span>
+                <div class="wishlist"><i class="fa fa-solid fa-heart"></i></div>
+              </div>
+
+              <span class="product-title">HP Victus i5 12th Gen</span>
+              <span class="price">Rs. 35000</span>
+              <div class="footer-btn">
+                <!-- <button class="no-border">
+                <i class="fa fa-solid fa-shopping-cart"></i>
+              </button> -->
+                <span style="font-weight: bold; font-size: 14px">4 ⭐</span>
+                <button class="no-border-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="./images/samsung-galaxy-book-2-intel-core-i5-12th-gen-1235u-8-gb-512-gb-ssd-windows-11-home-np550-thin-light-laptop.webp"
+                width="120px"
+                height="159px"
+                style="object-fit: contain"
+              />
+            </div>
+            <div class="card-content">
+              <div class="product-brand">
+                <span>SAMSUNG</span>
+                <div class="wishlist"><i class="fa fa-solid fa-heart"></i></div>
+              </div>
+
+              <span class="product-title">Samsung Galaxy Book 2</span>
+              <span class="price">Rs. 30000</span>
+              <div class="footer-btn">
+                <!-- <button class="no-border">
+                <i class="fa fa-solid fa-shopping-cart"></i>
+              </button> -->
+                <span style="font-weight: bold; font-size: 14px">5 ⭐</span>
                 <button class="no-border-btn">Add to Cart</button>
               </div>
             </div>
@@ -188,6 +526,64 @@
         </div>
       </div>
     </section>
+
+    <footer>
+      <div class="quick-links">
+        <ul>
+          <li>Quick Links</li>
+          <li><a>About Us</a></li>
+          <li><a>Contact Us</a></li>
+          <li><a>Terms & Conditions</a></li>
+          <li><a>Privacy</a></li>
+        </ul>
+      </div>
+      <div class="contact-us">
+        <ul>
+          <li>Contact Us</li>
+          <li>
+            <span style="margin-right: 5px"
+              ><i class="fa-solid fa-location-dot"></i
+            ></span>
+            <span> 123 Main Street, Anytown, USA 12345 </span>
+          </li>
+          <li>
+            <span style="margin-right: 5px">
+              <i class="fa-solid fa-phone"></i>
+            </span>
+            <span> +91 3355335535 </span>
+          </li>
+          <li>
+            <span style="margin-right: 5px"
+              ><i class="fa-solid fa-at"></i
+            ></span>
+            <span>abc.def@gmail.com</span>
+          </li>
+        </ul>
+      </div>
+      <div class="follow-us">
+        <div style="padding: 26px">
+          <span id="follow-us-heading">Follow Us</span>
+        </div>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.x.com"
+              ><i class="fa-brands fa-square-x-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <div class="all-rights">©2024 Apni Dukan | All Rights Reserved</div>
     <script src="./script.js"></script>
   </body>
 </html>

@@ -12,39 +12,43 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="OrderRequestStyle.css">
-
+<style>
+  main{
+    overflow: auto;
+  }
+</style>
 </head>
 <body>
     <section class="headerContainer">
-        <header>
-            <div id="logo">
-                <div class="logoCircle"></div>
-                <span class="logoName"><span class="logoFirstName">Apni</span> <span class=" hideMenu">Dukan</span></span>
-            </div>
-            <div class="menuContainer">
-                <div class="menu">
-                    <div class="menuIcon"><img class="menuIcon" src="./addProductIcono.svg" alt=""></div>
-                    <div class="menuoption hideMenu">Add Product</div>
-                </div>
-                <div class="menu">
-                    <div class="menuIcon"><img class="menuIcon" src="./deleteProductIcon.svg" alt=""></div>
-                    <div class="menuoption hideMenu">Delete Product</div>
-                </div>
-                <div class="menu">
-                    <div class="menuIcon"><img class="menuIcon" src="./deliveryProductIcon.svg" alt=""></div>
-                    <div class="menuoption hideMenu">Orders Request</div>
-                </div>
-                <div class="menu">
-                    <div class="menuIcon"><img class="menuIcon" src="./returnProductIcon.svg" alt=""></div>
-                    <div class="menuoption hideMenu">Return Request</div>
-                </div>
-                <div id="emptySpace"></div>
-                <div class="menu">
-                    <div class="menuIcon"><img class="menuIcon" src="./adminAccountIcon.svg" alt=""></div>
-                    <div class="menuoption hideMenu"><b>Account</b></div>
-                </div>
-            </div>
-        </header>
+      <header>
+        <div id="logo">
+            <div class="logoCircle"></div>
+            <span class="logoName"><span class="logoFirstName">Apni</span> <span class=" hideMenu">Dukan</span></span>
+        </div>
+        <div class="menuContainer">
+            <a href="./addproduct.html" class="menu" >
+                <div class="menuIcon"><img class="menuIcon" src="./addProductIcono.svg" alt=""></div>
+                <div class="menuoption  hideMenu" >Add Product</div>
+            </a>
+            <a href="./deleteProduct.html" class="menu">
+                <div class="menuIcon"><img class="menuIcon" src="./deleteProductIcon.svg" alt=""></div>
+                <div class="menuoption hideMenu">Delete Product</div>
+            </a>
+            <a href="./Order Request.html" class="menu" style="background-color: #F2F6FE;">
+                <div class="menuIcon"><img class="menuIcon" src="./deliveryProductIcon.svg" alt=""></div>
+                <div class="menuoption hideMenu">Orders Request</div>
+            </a>
+            <a href="./returnRequest.html" class="menu">
+                <div class="menuIcon"><img class="menuIcon" src="./returnProductIcon.svg" alt=""></div>
+                <div class="menuoption hideMenu">Return Request</div>
+            </a>
+            <div id="emptySpace"></div>
+            <a class="menu">
+                <div class="menuIcon"><img class="menuIcon" src="./adminAccountIcon.svg" alt=""></div>
+                <div class="menuoption hideMenu"><b>Account</b></div>
+            </a>
+        </div>
+    </header>
     </section>
     <section class="mainContainer">
         <section class="greetingArea">

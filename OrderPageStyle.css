@@ -33,5 +33,5 @@ h3{
     display: flex;
 }
 .table-container{
-    overflow-x: scroll;
+    overflow-x: auto;
 }
